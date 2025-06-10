@@ -1395,6 +1395,17 @@
 					z-index: 9999;
 					transform: translate(-50%, -50%);
 					}
+
+					@media (hover: none) and (pointer: coarse) {
+					#custom-cursor,
+					#cursor-dot {
+						display: none !important;
+					}
+
+					body {
+						cursor: auto;
+					}
+					}
 				</style>
 
 				<div id="custom-cursor"></div>
