@@ -2,16 +2,18 @@
 <html lang="en">
 	<head>
 		<link rel="stylesheet" href="assets/css/style.css">
+		<!-- Indexacion Google -->
+		<meta name="google-site-verification" content="-pjWdabAp2byOc3UQHDvHJi3J3RnhLZ1_bsbdePWh7A" />
 		<!-- Meta -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<!-- Meta Tags -->
-		<meta name="description" content="FernandoL -Portafolio personal">
-		<meta name="keywords" content="themes_mountain,personal, portfolio new, html, one page, bootstrap, new html template, design, creative, onepage, clean, modern">
-		<meta name="author" content="themes_mountain">
+		<meta name="description" content="Fernando López - Portafolio">
+		<meta name="keywords" content="portafolio new, html, one page, bootstrap, new html template, design, creative, clean, modern, redes, ingeniería, sistemas, desarrollo web, Linux, software libre">
+		<meta name="author" content="Fernando López">
 		<!-- Titulo del sitio -->
-		<title>FernandoL - Portafolio Personal</title>			
+		<title>Fernando López | Portafolio</title>			
 		<!-- Bootstrap-CSS -->
 		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">		
 		<!-- Fuentes de google -->
@@ -37,7 +39,6 @@
 		<script-- src="https://cdnjs.cloudflare.com/ajax/libs/polyglot.js/2.4.0/polyglot.min.js"></script>
 		<!-- Swiper CSS -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
 		<!-- Swiper JS -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	</head>
@@ -86,129 +87,144 @@
 		font-family: 'Segoe UI', sans-serif;
 		}
 		</style>
-  
+
 		<!-- inicio home -->
-		<section id="inicio" class="home_bg" 
-			style="background-image: url(assets/img/bg.jpg);  
-				background-size: cover; 
-				background-position: center top; 
-				background-attachment: fixed;">
-			<div id="particles-js">
-				<canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1898" height="775"></canvas>
-			</div>    
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8 col-sm-12 col-xs-12">    
-						<div class="about_me_content">
-							<span data-i18n="Hola"> - ¡Hola! Soy Fernando López</span>
-							<h1 class="typewrite" data-period="2000" data-type='[ "CCNA", "SySADMIN", "FRONT-END"]'>
-								<span class="wrap"></span>
-							</h1>
-							<p class="bio" data-i18n="bio">
-								Estudiante de Ingeniería en Sistemas y Redes Informáticas con conocimientos en administración de scripting, redes CCNA y diseño web. Apasionado por el software libre, la electrónica y redes Cisco.
-							</p>    
-						</div>
-						<div class="basic-info" style="margin-top: 10px;">
-							<div class="social-links">
-								<a href="https://mail.google.com/mail/?view=cm&fs=1&to=Ferloto1304@gmail.com&su=Contacto%20desde%20tu%20portafolio&body=Hola%20Fernando,%20vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20contigo%20sobre..." target="_blank">
-									<div id="email" class="social-btn flex-center">
-										<svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
-											<path d="M12 13.5l-12-9v15h24v-15zM12 10.5l12-9h-24z"></path>
-										</svg>
-										<span>Email</span>
-									</div>
-								</a>
-								
-								<a href="https://linkedin.com/in/fernando-jose-lopez-torres-640625353" target="_blank">
-									<div id="linkedin" class="social-btn flex-center">
-										<svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
-											<path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"></path>
-										</svg>
-										<span>LinkedIn</span>
-									</div>
-								</a>
+		<style>
+		.home_bg {
+		position: relative;
+		width: 100%;
+		min-height: 100vh;
+		overflow: hidden;
+		background-attachment: fixed;
+		background-image: url('assets/img/bg.jpg');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		}
 
-								<a href="assets/docs/CV.pdf" target="_blank">
-									<div id="pdf" class="social-btn flex-center">
-										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-											<path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm0 16H6V4h6v5h5v9z"/>
-										</svg>
-										<span>CV</span>
-									</div>
-								</a>																
-							</div>      
-						</div>
+		@media (max-width: 768px) {
+		.home_bg {
+			background-attachment: scroll !important;
+			background-position: 75% center !important;
+		}
+		}
+		</style>							  
+
+		<section id="inicio" class="home_bg">
+		<div id="particles-js"></div>    
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-sm-12 col-xs-12">    
+					<div class="about_me_content">
+						<span data-i18n="Hola"> - ¡Hola! Soy Fernando López</span>
+						<h1 class="typewrite" data-period="2000" data-type='[ "CCNA", "SySADMIN", "FRONT-END"]'>
+							<span class="wrap"></span>
+						</h1>
+						<p class="bio" data-i18n="bio">
+							Estudiante de Ingeniería en Sistemas y Redes Informáticas con conocimientos en administración de scripting, redes CCNA y diseño web. Apasionado por el software libre, la electrónica y redes Cisco.
+						</p>    
 					</div>
-					<style>
-						.social-links,.flex-center {
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						}
+					<div class="basic-info" style="margin-top: 10px;">
+						<div class="social-links">
+							<a href="https://mail.google.com/mail/?view=cm&fs=1&to=Ferloto1304@gmail.com&su=Contacto%20desde%20tu%20portafolio&body=Hola%20Fernando,%20vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20contigo%20sobre..." target="_blank">
+								<div id="email" class="social-btn flex-center">
+									<svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 13.5l-12-9v15h24v-15zM12 10.5l12-9h-24z"></path>
+									</svg>
+									<span>Email</span>
+								</div>
+							</a>
+							
+							<a href="https://linkedin.com/in/fernando-jose-lopez-torres-640625353" target="_blank">
+								<div id="linkedin" class="social-btn flex-center">
+									<svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"></path>
+									</svg>
+									<span>LinkedIn</span>
+								</div>
+							</a>
 
-						.social-btn {
-						cursor: pointer;
-						height: 50px;
-						width: 50px;
-						font-family: 'Titillium Web', sans-serif;
-						color: #fff;
-						border-radius: 10px;
-						box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-						background: transparent;
-						border: 2px solid rgba(255, 255, 255, 0.6);
-						margin: 5px;
-						transition: 0.3s;
-						justify-content: center;
-						align-items: center;
-						}
-
-						.social-btn svg {
-						height: 24px;
-						width: 24px;
-						}
-
-						.social-btn span {
-						width: 0px;
-						overflow: hidden;
-						transition: 0.3s;
-						text-align: center;
-						margin-left: 5px;
-						color: white;
-						}
-
-						.social-btn:hover {
-						width: 150px;
-						border-radius: 5px;
-						background: rgba(255, 255, 255, 0.1);
-						}
-
-						.social-btn:hover span {
-						padding: 2px;
-						width: 80px;
-						}
-
-						#email svg {
-							fill: #D44638;
-							margin-top: 5px;
-							transform: translate(3px, -2px);
-						}
-
-						#linkedin svg {
-							fill: #0e76a8;
-							transform: translate(3px, -2px);
-						}
-
-						#pdf svg {
-							fill: #d32525;
-							margin-top: 4px;
-							transform: translate(3px, -2px);
-						}
-						a {
-						text-decoration: none;
-						}
-					</style>
+							<a href="assets/docs/CV.pdf" target="_blank">
+								<div id="pdf" class="social-btn flex-center">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+										<path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm0 16H6V4h6v5h5v9z"/>
+									</svg>
+									<span>CV</span>
+								</div>
+							</a>																
+						</div>      
+					</div>
 				</div>
+				<style>
+					.social-links,.flex-center {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					}
+
+					.social-btn {
+					cursor: pointer;
+					height: 50px;
+					width: 50px;
+					font-family: 'Titillium Web', sans-serif;
+					color: #fff;
+					border-radius: 10px;
+					box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+					background: transparent;
+					border: 2px solid rgba(255, 255, 255, 0.6);
+					margin: 5px;
+					transition: 0.3s;
+					justify-content: center;
+					align-items: center;
+					}
+
+					.social-btn svg {
+					height: 24px;
+					width: 24px;
+					}
+
+					.social-btn span {
+					width: 0px;
+					overflow: hidden;
+					transition: 0.3s;
+					text-align: center;
+					margin-left: 5px;
+					color: white;
+					}
+
+					.social-btn:hover {
+					width: 150px;
+					border-radius: 5px;
+					background: rgba(255, 255, 255, 0.1);
+					}
+
+					.social-btn:hover span {
+					padding: 2px;
+					width: 80px;
+					}
+
+					#email svg {
+						fill: #D44638;
+						margin-top: 5px;
+						transform: translate(3px, -2px);
+					}
+
+					#linkedin svg {
+						fill: #0e76a8;
+						transform: translate(3px, -2px);
+					}
+
+					#pdf svg {
+						fill: #d32525;
+						margin-top: 4px;
+						transform: translate(3px, -2px);
+					}
+					a {
+					text-decoration: none;
+					}
+				</style>
 			</div>
+		</div>
 		</section>
 		<!-- final home -->
 
@@ -410,6 +426,319 @@
 		<!-- Final Sobre mi -->
 
 		<!-- Inicio Reconocimientos -->
+		<style>
+		.reconocimientos-container {
+		background-color: #191A1C;
+		color: #FFFFFF;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		margin: 0;
+		padding: 20px;
+		}
+
+		.reconocimientos-container h2 {
+		color: #00ADB5;
+		font-weight: 600;
+		}
+
+		.reconocimientos-container .botones {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 16px;
+		margin-top: 50px;
+		}
+
+		.reconocimientos-container .botones button {
+		padding: 12px 24px;
+		font-size: 16px;
+		font-weight: 500;
+		background: linear-gradient(145deg, #00adb5, #00a1aa);
+		color: #ffffff;
+		border: none;
+		border-radius: 12px;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		box-shadow: 0 4px 12px rgba(0, 173, 181, 0.3), inset 0 -2px 0 rgba(255, 255, 255, 0.05);
+		letter-spacing: 0.5px;
+		}
+
+		.reconocimientos-container .botones button:hover {
+		transform: scale(1.04);
+		background: linear-gradient(145deg, #00c4cc, #00adb5);
+		box-shadow: 0 6px 16px rgba(0, 173, 181, 0.5);
+		}
+
+		.reconocimientos-container .botones button.activo {
+		background: linear-gradient(145deg, #393e46, #2e3238);
+		transform: scale(1.08);
+		box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
+		}
+
+		.reconocimientos-container .seccion {
+		display: none;
+		margin: 20px auto;
+		max-width: 700px;
+		border: 1px solid #333;
+		padding: 20px;
+		border-radius: 12px;
+		background-color: #2F3033;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+		}
+
+		.reconocimientos-container .seccion p {
+		color: #E0E0E0;
+		font-size: 16px;
+		line-height: 1.6;
+		}
+
+		.reconocimientos-container .contenedor-imagenes {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		justify-content: center;
+		margin-top: 20px;
+		}
+
+		.reconocimientos-container .imagen-seccion {
+		width: 45%;
+		max-width: 250px;
+		height: auto;
+		border-radius: 10px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+		object-fit: cover;
+		}
+
+		@media (max-width: 600px) {
+		.reconocimientos-container .botones button {
+			flex: 0 0 auto;
+			font-size: 14px;
+			padding: 14px 20px;
+		}
+		}
+
+		.reconocimientos-container .modal {
+		display: none;
+		position: fixed;
+		z-index: 9999;
+		padding-top: 60px;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgba(0,0,0,0.9);
+		}
+
+		.reconocimientos-container .modal-contenido {
+		margin: auto;
+		display: block;
+		max-width: 90%;
+		max-height: 80vh;
+		border-radius: 10px;
+		}
+
+		.reconocimientos-container .cerrar {
+		position: absolute;
+		top: 30px;
+		right: 40px;
+		color: #fff;
+		font-size: 35px;
+		font-weight: bold;
+		cursor: pointer;
+		transition: color 0.3s ease;
+		}
+
+		.reconocimientos-container .cerrar:hover {
+		color: #ccc;
+		}
+
+		.reconocimientos-container .contenedor-tarjetas {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+			gap: 20px;
+			justify-content: center;
+			max-width: 560px;
+			margin: 0 auto;
+		}
+
+		.reconocimientos-container .tarjeta {
+			background-color: #1f2123;
+			border: 1px solid #444;
+			border-radius: 12px;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+			padding: 16px;
+			width: 260px;
+			text-align: center;
+			transition: transform 0.3s ease;
+		}
+
+		.reconocimientos-container .tarjeta:hover {
+			transform: scale(1.03);
+		}
+
+		.reconocimientos-container .tarjeta img {
+			width: 100%;
+			height: auto;
+			border-radius: 8px;
+			cursor: pointer;
+			margin-bottom: 12px;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+		}
+
+		.reconocimientos-container .tarjeta h3 {
+			color: #00ADB5;
+			font-size: 18px;
+			margin: 8px 0 4px;
+		}
+
+		.reconocimientos-container .tarjeta p {
+			font-size: 14px;
+			color: #ccc;
+			margin: 0 0 6px;
+		}
+
+		.reconocimientos-container .tarjeta small {
+			font-size: 12px;
+			color: #888;
+		}
+		@media (max-width: 600px) {
+		.reconocimientos-container .contenedor-tarjetas {
+			grid-template-columns: repeat(2, 1fr);
+			max-width: 100%;
+		}
+		
+		.reconocimientos-container .tarjeta {
+			width: auto;
+		}
+		}
+		</style>
+
+		<div class="reconocimientos-container">
+			<div class="botones" style="margin-top: 90px;">
+			<button id="btn-reconocimientos" class="activo" data-i18n="reco" onclick="mostrarSeccion('reconocimientos', this)">Reconocimientos</button>
+			<button id="btn-diploma" onclick="mostrarSeccion('diploma', this)">Diplomas</button>
+			<button id="btn-testimonio" data-i18n="test" onclick="mostrarSeccion('testimonio', this)">Testimonios</button>
+			</div>
+			
+				<!-- RECONOCIMIENTOS -->
+				<div id="reconocimientos" class="seccion">
+					<h2 class="seccion-titulo" style="text-align: center;" data-i18n="reco">Reconocimientos</h2>
+					<div class="contenedor-tarjetas">
+						<div class="tarjeta">
+							<img src="assets/img/ccna2.png" alt="CCNA2" onclick="mostrarImagen(this.src)">
+							<h3 data-i18n="reco1">Insignia CCNA 2</h3>
+							<p data-i18n="reco2">Redes Intermedias</p>
+							<small data-i18n="reco3">Junio 2023</small>
+						</div>
+						<div class="tarjeta">
+							<img src="assets/img/ccna1.png" alt="CCNA1" onclick="mostrarImagen(this.src)">
+							<h3 data-i18n="reco4">Insignia CCNA 1</h3>
+							<p data-i18n="reco5">Fundamentos de Redes</p>
+							<small data-i18n="reco6">Diciembre 2022</small>
+						</div>
+					</div>
+				</div>
+			
+			<!-- DIPLOMAS -->
+			<div id="diploma" class="seccion">
+				<h2 class="seccion-titulo" style="text-align: center;">Diplomas</h2>
+				<div class="contenedor-tarjetas">
+					<div class="tarjeta">
+						<img src="assets/img/ntw.jpg" alt="DiplomaNetworking" onclick="mostrarImagen(this.src)">
+						<h3>Networking-Challenge</h3>
+						<p data-i18n="diplo1">Concurso Avanzado de Conectividad</p>
+						<small data-i18n="diplo2">Mayo 2025</small>
+					</div>
+					<div class="tarjeta">
+						<img src="assets/img/Diploma Progra.jpg" alt="DiplomaProgramacion" onclick="mostrarImagen(this.src)">
+						<h3 data-i18n="diplo3">Desarrollo de Software</h3>
+						<p data-i18n="diplo4">Aplicativo web - Escandalos Boutique</p>
+						<small data-i18n="diplo5">Diciembre 2023</small>
+					</div>
+					<div class="tarjeta">
+						<img src="assets/img/ccna2DP.png" alt="DiplomaProgramacion" onclick="mostrarImagen(this.src)">
+						<h3 data-i18n="diplo6">Certificado CCNA2</h3>
+						<p data-i18n="diplo7">Redes Intermedias</p>
+						<small data-i18n="diplo8">Junio 2023</small>
+					</div>
+					<div class="tarjeta">
+						<img src="assets/img/ccna1DP.png" alt="DiplomaProgramacion" onclick="mostrarImagen(this.src)">
+						<h3 data-i18n="diplo9">Certificado CCNA1</h3>
+						<p data-i18n="diplo10">Fundamentos de Redes</p>
+						<small data-i18n="diplo11">Diciembre 2022</small>
+					</div>
+				</div>
+			</div>
+			
+			<!-- TESTIMONIOS -->
+			<div id="testimonio" class="seccion">
+				<h2 class="seccion-titulo" style="text-align: center;" data-i18n="test">Testimonios</h2>
+				<div class="contenedor-tarjetas">
+					<div class="tarjeta">
+						<img src="assets/img/testimonio/lictorres.jpeg" alt="Lic.Torres" onclick="mostrarImagen(this.src)">
+						<h3>Lic. Oscar Torres</h3>
+						<p data-i18n="test1">Testimonio</p>
+						<small data-i18n="test2">Junio 2025</small>
+					</div>
+					<div class="tarjeta">
+						<img src="assets/img/testimonio/ingalcir.jpeg" alt="Ing.Alcir" onclick="mostrarImagen(this.src)">
+						<h3>Ing. Alcir Quintanilla</h3>
+						<p data-i18n="test1">Testimonio</p>
+						<small data-i18n="test2">Junio 2025</small>
+					</div>
+					<div class="tarjeta">
+						<img src="assets/img/testimonio/liccordero.jpeg" alt="Lic.Cordero" onclick="mostrarImagen(this.src)">
+						<h3>Lic. Herbert Cordero</h3>
+						<p data-i18n="test1">Testimonio</p>
+						<small data-i18n="test2">Junio 2025</small>
+					</div>
+				</div>
+			</div>
+		
+			<div id="modalImagen" class="modal">
+			<span class="cerrar" onclick="cerrarModal()">&times;</span>
+			<img class="modal-contenido" id="imagenGrande">
+			</div>
+		</div>
+
+		<script>
+			function mostrarImagen(src) {
+			const modal = document.getElementById("modalImagen");
+			const imgGrande = document.getElementById("imagenGrande");
+			imgGrande.src = src;
+			modal.style.display = "block";
+			}
+			function cerrarModal() {
+			document.getElementById("modalImagen").style.display = "none";
+			}
+			window.onclick = function(event) {
+			const modal = document.getElementById("modalImagen");
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+			}
+		</script>
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+			document.getElementById("reconocimientos").style.display = "block";
+			});
+		
+			function mostrarSeccion(id, boton) {
+			const secciones = document.querySelectorAll('.seccion');
+			secciones.forEach(sec => sec.style.display = 'none');
+		
+			const activa = document.getElementById(id);
+			if (activa) {
+				activa.style.display = 'block';
+			}
+
+			const botones = document.querySelectorAll('.botones button');
+			botones.forEach(btn => btn.classList.remove('activo'));
+		
+			boton.classList.add('activo');
+			}
+		</script>
 		<!-- Fin Reconocimientos -->
 
 		<!-- Inicio Proyectos -->
@@ -445,7 +774,7 @@
 				</div>
 
 				<!-- Proyecto 3 -->
-				<div class="swiper-slide" onclick="openProjectModal(['assets/img/proyectos/proyecto3.png', 'assets/img/proyectos/proyecto3-1.png', 'assets/img/proyectos/proyecto3-2.png'], 'projectName3', 'rol3', 'pro3', 'projectDescription3', ['OSPF', 'LAG', 'VLAN','STP','DHCP','IPSEC','GRE','TACACS','ACL','NAT','IPV4','IPV6'], '','')">
+				<div class="swiper-slide" onclick="openProjectModal(['assets/img/proyectos/proyecto3.png', 'assets/img/proyectos/proyecto3-1.png', 'assets/img/proyectos/proyecto3-2.png'], 'projectName3', 'rol3', 'pro3', 'projectDescription3', ['OSPF', 'LAG', 'VLAN','STP','DHCP','IPSEC','GRE','TACACS','ACL','NAT','IPV4','IPV6','IOT'], '','')">
 					<div class="card shadow-sm project-card" style="border-radius: 10px; overflow: hidden;">
 					<img src="assets/img/proyectos/Proyecto3.png" class="card-img-top project-img" alt="Proyecto Imagen">
 					<div class="card-body d-flex flex-column">
@@ -466,6 +795,7 @@
 							<span class="tag tag-nat">NAT</span>
 							<span class="tag tag-ipv4">IPV4</span>
 							<span class="tag tag-ipv6">IPV6</span>
+							<span class="tag tag-iot">IOT</span>
 						</div>
 					</div>
 					</div>
@@ -718,6 +1048,9 @@
 			.tag-lan-nat {
 				background-color: #cc0d0d;
 			}
+			.tag-iot {
+				background-color: #000000;
+			}
 			#modalProjectName {
 			visibility: visible;
 			font-size: 1.5rem;
@@ -859,6 +1192,30 @@
 		<!-- Final Proyectos -->
 		
 		<!-- Inicio Intereses -->
+		<section id="interesP" style="background:#191A1C; color:#00FFC8; padding: 2rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 600px; margin: auto; border-radius: 8px;">
+			<h2 style="border-bottom: 2px solid #00FFC8; padding-bottom: 0.5rem; margin-bottom: 1rem; font-weight: 700; text-align: center;" data-i18n="interes1">Intereses</h2>
+			<ul style="list-style: none; padding-left: 0; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 0 auto;">
+			<li style="background: #00FFC822; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; box-shadow: 0 0 10px #00FFC855;" data-i18n="interes2">Redes Cisco</li>
+			<li style="background: #00FFC822; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; box-shadow: 0 0 10px #00FFC855;" data-i18n="interes3">Electrónica</li>
+			<li style="background: #00FFC822; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; box-shadow: 0 0 10px #00FFC855;" data-i18n="interes4">Software Libre</li>
+			<li style="background: #00FFC822; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; box-shadow: 0 0 10px #00FFC855;">Front End</li>
+			</ul>
+		</section>		 
+		
+		<style>
+			#interesP {
+			scroll-margin-top: 100px;
+			}
+			#sobremi {
+			scroll-margin-top: 50px;
+			}
+			#proyectos {
+			scroll-margin-top: 30px;
+			}
+			#contacto {
+			scroll-margin-top: 80px;
+			}
+		</style>
 		<!-- Fin Intereses -->
 
 		<!-- Inicio Contacto -->
@@ -1003,20 +1360,73 @@
 				<script src="assets/js/magic_mouse.js"></script>
 				<script src="assets/js/scripts.js"></script>
 
-		<!-- Inicio scrolltopcontrol js -->
-		<script type="text/javascript">			
-			options = {
-				"cursorOuter": "circle-basic",
-				"hoverEffect": "circle-move",
-				"hoverItemMove": false,
-				"defaultCursor": false,
-				"outerWidth": 30,
-				"outerHeight": 30
-				}
-				magicMouse(options);
-		</script>
-		<!-- Final scrolltopcontrol js -->
-		
+				<!-- Estilo moderno para el cursor -->
+				<style>
+					body {
+					cursor: none;
+					background-color: #191A1C;
+					}
+				
+					#custom-cursor {
+					position: fixed;
+					top: 0;
+					left: 0;
+					width: 20px;
+					height: 20px;
+					border: 2px solid #00FFC8;
+					border-radius: 6px;
+					box-shadow: 0 0 10px #00ffc899;
+					pointer-events: none;
+					z-index: 9999;
+					transform: translate(-50%, -50%) rotate(45deg);
+					transition: transform 0.1s ease-out;
+					}
+
+					#cursor-dot {
+					position: fixed;
+					top: 0;
+					left: 0;
+					width: 4px;
+					height: 4px;
+					background-color: #00FFC8;
+					border-radius: 50%;
+					box-shadow: 0 0 5px #00ffc877;
+					pointer-events: none;
+					z-index: 9999;
+					transform: translate(-50%, -50%);
+					}
+				</style>
+
+				<div id="custom-cursor"></div>
+				<div id="cursor-dot"></div>
+
+				<script>
+					const ring = document.getElementById('custom-cursor');
+					const dot = document.getElementById('cursor-dot');
+
+					let mouseX = 0, mouseY = 0;
+					let ringX = 0, ringY = 0;
+				
+					document.addEventListener('mousemove', (e) => {
+					mouseX = e.clientX;
+					mouseY = e.clientY;
+
+					dot.style.top = `${mouseY}px`;
+					dot.style.left = `${mouseX}px`;
+					});
+
+					function animate() {
+						ringX += (mouseX - ringX) * 0.9;
+						ringY += (mouseY - ringY) * 0.9;
+					ring.style.top = `${ringY}px`;
+					ring.style.left = `${ringX}px`;
+
+					requestAnimationFrame(animate);
+					}
+					animate();
+				</script>				  
+				<!-- Estilo moderno para el cursor -->
+
 		<!-- particulas js -->	
 		<script>
 			particlesJS("particles-js", {
@@ -1080,7 +1490,7 @@
 				position: fixed;
 				bottom: 20px;
 				right: 20px;
-				background-color: #007bff;
+				background-color: #00ADB5;
 				color: white;
 				border: none;
 				border-radius: 50%;
@@ -1094,7 +1504,7 @@
 				z-index: 1000;
 			}
 			.translate-float-btn:hover {
-				background-color: #0056b3;
+				background-color: #57d1d7;
 			}
 			</style>
 		<!-- Final btn traductor -->
