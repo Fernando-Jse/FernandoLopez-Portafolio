@@ -52,12 +52,16 @@
 			</div>
 		<!-- Finalizador -->
 
-				<!-- Barra de navegacion -->
+		<!-- Barra de navegacion -->
 		<nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
 			<div class="container">
 				<a class="navbar-brand" href="#inicio"><img src="assets/img/logooo.png" alt="Logo" class="navbar-logo me-2"><span class="navbar-slogan" data-i18n="eslogan"> Si lo imaginas, Lo creas</span></a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-					<i class="fa-solid fa-bars"></i>
+				<button class="navbar-toggler" type="button"  data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</span>
 				</button>								  
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 					<ul id="navbar-navlist" class="navbar-nav ms-auto">
@@ -72,6 +76,146 @@
 				</div><!--Final collapse-->
 			</div><!--Final contenedor -->
 		</nav>
+
+		<style>
+			.nav-link {
+				position: relative;
+				display: inline-block;
+				padding-bottom: 5px;
+				color: #fff;
+				text-decoration: none;
+				transition: color 0.3s ease;
+			}
+		
+			.nav-link::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 0%;
+				height: 2px;
+				background-color: #fff;
+				transition: width 0.3s ease;
+			}
+		
+			.nav-link:hover::after {
+				width: 100%;
+			}
+		
+			.hamburger {
+				display: inline-block;
+				cursor: pointer;
+				width: 24px;
+				height: 18px;
+				position: relative;
+				transition: all 0.3s ease-in-out;
+			}
+		
+			.hamburger .bar {
+				display: block;
+				width: 100%;
+				height: 3px;
+				background-color: #fff;
+				border-radius: 2px;
+				position: absolute;
+				left: 0;
+				transition: all 0.3s ease-in-out;
+			}
+		
+			.hamburger .bar:nth-child(1) {
+				top: 0;
+			}
+		
+			.hamburger .bar:nth-child(2) {
+				top: 7.5px;
+			}
+		
+			.hamburger .bar:nth-child(3) {
+				bottom: 0;
+			}
+		
+			.hamburger.active .bar:nth-child(1) {
+				transform: rotate(45deg);
+				top: 7.5px;
+			}
+		
+			.hamburger.active .bar:nth-child(2) {
+				opacity: 0;
+			}
+		
+			.hamburger.active .bar:nth-child(3) {
+				transform: rotate(-45deg);
+				bottom: 7.5px;
+			}
+		
+			@media (max-width: 991.98px) {
+				#navbarCollapse {
+					background: #191A1C;
+					backdrop-filter: blur(12px);
+					border-radius: 0 0 12px 12px;
+					padding: 0.8rem 1rem;
+					box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+					animation: fadeSlideIn 0.3s ease;
+				}
+		
+				#navbar-navlist .nav-item {
+					margin-bottom: 0.6rem;
+					border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+					padding-bottom: 0.3rem;
+				}
+		
+				#navbar-navlist .nav-link {
+					font-size: 0.95rem;
+					display: block;
+					text-align: left;
+					color: #fff;
+					padding: 0.4rem 0;
+					transition: all 0.2s ease-in-out;
+				}
+		
+				#navbar-navlist .nav-link:hover {
+					color: #00bcd4;
+					transform: translateX(4px);
+				}
+		
+				#navbar-navlist .nav-link::after {
+					display: none;
+				}
+		
+				@keyframes fadeSlideIn {
+					from {
+						opacity: 0;
+						transform: translateY(-6px);
+					}
+					to {
+						opacity: 1;
+						transform: translateY(0);
+					}
+				}
+			}
+		</style>		
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+			const toggler = document.querySelector('.navbar-toggler');
+			const hamburger = toggler.querySelector('.hamburger');
+			const navbarCollapse = document.getElementById('navbarCollapse');
+		
+			toggler.addEventListener('click', function () {
+				hamburger.classList.toggle('active');
+				navbarCollapse.classList.toggle('show');
+			});
+
+			document.querySelectorAll('.nav-link').forEach(link => {
+				link.addEventListener('click', function () {
+				if (window.innerWidth < 992) {
+					navbarCollapse.classList.remove('show');
+					hamburger.classList.remove('active');
+				}
+				});
+			});
+			});
+		</script>	  
 		<!-- final barra de navegacion-->
 
 		<style>
